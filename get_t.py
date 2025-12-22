@@ -1,4 +1,4 @@
-from speed_auto import speed
+from speed_auto import speed, country
 
 print('Hello')
 
@@ -15,8 +15,16 @@ def auto(brand):
     return brand
 
 def f(b):
-    return speed[b]
-    
+    try:  
+        return speed[b]
+    except:
+        print('Для такого бренда машины средняя скорость неизвеста')
+
+def country_f(b):
+    try:
+        return country[b]
+    except:
+        print('Такой марки машины нет в списке')
 
 b = input('Введите бренд авто')
 print(auto(b))
