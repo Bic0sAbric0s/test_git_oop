@@ -1,4 +1,9 @@
 from speed_auto import speed
+
+print('Hello')
+
+for i in range(5):
+    print(i)
     
 def hello():
     pass
@@ -10,12 +15,10 @@ def auto(brand):
     return brand
 
 def f(b):
-    try:  
-        return speed[b]
-    except:
-        print('Для такого бренда машины средняя скорость неизвеста')
+    return speed[b]
     
 
 b = input('Введите бренд авто')
 print(auto(b))
 print(f(b))
+print(country_f(b))
