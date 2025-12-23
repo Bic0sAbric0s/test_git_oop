@@ -1,4 +1,5 @@
 from speed_auto import speed, country
+from distances_auto import distance
 
 print('Hello')
 
@@ -23,6 +24,12 @@ def f(b):
 def country_f(b):
     try:
         return country[b]
+    except:
+        print('Такой марки машины нет в списке')
+        
+def distance_f(b):
+    try:
+        return distance[b]
     except:
         print('Такой марки машины нет в списке')
 
