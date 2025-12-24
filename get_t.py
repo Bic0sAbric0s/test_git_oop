@@ -32,6 +32,8 @@ def distance_f(b):
         return distance[b]
     except:
         print('Такой марки машины нет в списке')
+        
+print('-----------------')
 
 b = input('Введите бренд авто')
 print(auto(b))
